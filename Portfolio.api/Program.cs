@@ -9,13 +9,13 @@ builder.Services.AddSqlServer<PortFolioContext>(builder.Configuration.GetConnect
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+builder.Services.AddCors();
 
 var app = builder.Build();
 
 app.UseSwagger();
 app.UseSwaggerUI();
-
+app.UseCors(option => { option.AllowAnyOrigin(); option.AllowAnyHeader(); });
 app.UseHttpsRedirection();
 
 app.MapPost("/Contacts", async (PortFolioContext context, Contact contact) =>

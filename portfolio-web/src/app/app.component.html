@@ -1,0 +1,71 @@
+<div class="menu">
+  <a href="#" class="icon-main">JC</a>
+  <a href="#skills" class="icon-skills"></a>
+  <a href="#projects" class="icon-projects"></a>
+  <a href="#contact" class="icon-contact"></a>
+  <div class="divider"></div>
+  <a href="#" class="icon-linkedin" target="_blank"></a>
+  <a href="#" class="icon-github" target="_blank"></a>
+  <a href="#" class="icon-youtube" target="_blank"></a>
+</div>
+
+<section class="main">
+<div class="content">
+  <div class="leftside">
+    <h1>Olá, <br/>
+      Eu sou o <span>J</span>osé <span>C</span>ristóvão <br/>
+      Desenvolvedor full stack
+    </h1>
+    <button class="btn-contact" href="#contact">Entrar em contacto</button>
+  </div>
+  <div class="img">
+    
+  </div>
+</div>
+</section>
+
+<section class="skills" id="skills">
+    <h1>Competencias</h1>
+
+    <p>Backend</p>
+    <div class="loading backend"></div>
+
+    <p>FrontEnd</p>
+    <div class="loading frontend"></div>
+
+    <p>Devops</p>
+    <div class="loading devops"></div>
+
+    <p>Mobile</p>
+    <div class="loading mobile"></div>
+</section>
+
+<section class="projects" id="projects">
+  <h1>Portfólio e<br>Experiencias</h1>
+
+  <div class="boxes">
+    <div class="box blue">Enterprise</div>
+    <div class="box red">Palanca</div>
+    <div class="box blue">Mais INSS</div>
+  </div>
+
+  <div class="boxes">
+    <div class="box orange">Agt Mobile</div>
+    <div class="box green">eSchedule</div>
+    <div class="box orange"></div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <h1>Entrar em contacto</h1>
+  <div class="form">
+    <div class="row">
+      <input class="input" type="text" placeholder="Nome" [(ngModel)]="name"/>
+      <input class="input" type="text" placeholder="Email" [(ngModel)]="email"/>
+    </div>
+    <input class="input" type="text" placeholder="Assunto" [(ngModel)]="subject"/>
+    <textarea class="textarea" placeholder="Mensagem" [(ngModel)]="message"></textarea>
+    <button class="submit" type="submit" (click)="sendMessage()">Enviar</button>
+  </div>
+</section>

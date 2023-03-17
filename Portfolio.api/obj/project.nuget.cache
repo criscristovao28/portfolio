@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QZJcS8VI6p6qDCjq5tNcXwoo5VOxhSI6Zse4NOe8+RGT7PwrH60hOtKsCplSPot1tuSFvGMGvxsYpW3I6kBJdA==",
+  "dgSpecHash": "jOGbPTvySzuQ9iqRefsF9tCveOf1JQggQTEcy4jhdt7Xkxm7aXo38Gn+AEG+FI++YUiyiwc+0s8bErY8bpurJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\JoséCristovão\\source\\repos\\Portfolio.api\\Portfolio.api\\Portfolio.api.csproj",
+  "projectFilePath": "C:\\Angular\\Portfolio\\Portfolio.api\\Portfolio.api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JoséCristovão\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\JoséCristovão\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

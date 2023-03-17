@@ -1,5 +1,5 @@
 {
-  "name": "portfolio.web",
+  "name": "portfolio-web",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
