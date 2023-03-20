@@ -20,6 +20,7 @@ app.UseHttpsRedirection();
 
 app.MapPost("/Contacts", async (PortFolioContext context, Contact contact) =>
 {
+    contact.Data = DateTime.Now;
     await context.Contacts.AddAsync(contact);
     await context.SaveChangesAsync();
     return Results.Ok(contact);
