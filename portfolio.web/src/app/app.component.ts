@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ToastrService } from 'ngx-toastr/public_api';
 import { ContactsService } from './services/contacts.service';
 
 @Component({
@@ -14,14 +15,14 @@ export class AppComponent {
   subject!:string;
   message!:string;
 
-  constructor( private contactService: ContactsService)
+  constructor( private contactService: ContactsService, private toastService: ToastrService)
   {
   
   }
 
   sendMessage()
   {
-    console.log("Estou no metodo");
+    
     
     this.contactService.addContact({
       Name:this.name,
@@ -29,6 +30,7 @@ export class AppComponent {
       Subject: this.subject,
       Message: this.message,
     }).subscribe(()=>{
+      this.toastService.success('Mensagem enviada com sucesso');
       this.email='',
       this.name='';
       this.subject='',
